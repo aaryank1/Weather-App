@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="app">
+        <div class="container">
+            
+            <%
+                let greetings;
+                const date = new Date();
+                const hour = date.getHours();
+                const mins = date.getMinutes();
+                const second = date.getSeconds();
+                
+                if ( (hour >= 0 && mins>0 && second>0) && (hour < 12 && mins<=59 && second<=59) ){
+                    greetings = "Good Morning"
+                }
+                else if (hour >= 12 && hour < 18)
+                    greetings = "Good Afternoon"
+                else {
+                    greetings = "Good Evening"
+                }
+            %>
+            
+            <h1 class="greet"><%= greetings %></h1>
+            <form action="/get-weather" method="post">
+                <label for="city_name"><h3>City</h3> </label>
+                <input type="text" name="city_name" id="city">
+                
+                <button type="submit">Search</button>
+            </form>
+            <% if(locals.content){ %>
+                <div class="weather">
+                    <p><h3>City:</h3> <%= content.name %></p>
+                    <p><h3>Description:</h3> <%= content.weather[0].description %></p>
+                    <p><h3>Temperature:</h3> <%= content.main.temp %></p>
+                    <p><h3>Humidity:</h3> <%= content.main.humidity %></p>
+                </div>
+                
+            <% } else if(locals.error){ %>
+                <div class="err_res">
+                    <h2><%= msg %></h2>
+                    <h2><%= error %></h2>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    
+</body>
+</html>
