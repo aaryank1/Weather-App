@@ -9,7 +9,11 @@ User-Friendly Interface: A clean and intuitive interface that makes checking the
 
 Demo
 Here's a quick demo of the Simple Weather App in action:
-[![Watch the video](https://raw.githubusercontent.com/aaryank1/Weather-App/main/thumbnail.png)](https://raw.githubusercontent.com/aaryank1/Weather-App/main/demo.mp4)
+
+
+
+https://github.com/user-attachments/assets/f58770ba-83ff-47fc-86f8-78fa8ab9043b
+
 
 Technologies Used
 Frontend: HTML, CSS, JavaScript
