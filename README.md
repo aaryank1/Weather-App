@@ -3,8 +3,8 @@
 This application provides current weather information and forecasts for any location. It's a straightforward and easy-to-use weather application built using modern web technologies.
 
 # Features
-Current Weather: Get up-to-date weather information for any location, including temperature, weather conditions, and more.
-Search by City: Easily search for weather information by entering the name of the city.
+Current Weather: Get up-to-date weather information for any location, including temperature, weather conditions, and more.<br>
+Search by City: Easily search for weather information by entering the name of the city.<br>
 User-Friendly Interface: A clean and intuitive interface that makes checking the weather quick and easy.
 
 # Demo
