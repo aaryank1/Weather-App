@@ -1,6 +1,7 @@
 # Weather-App
 
 This application provides current weather information and forecasts for any location. It's a straightforward and easy-to-use weather application built using modern web technologies.
+Here I have implemented my learnigs of making API calls using axios.
 
 # Features
 Current Weather: Get up-to-date weather information for any location, including temperature, weather conditions, and more.<br>
